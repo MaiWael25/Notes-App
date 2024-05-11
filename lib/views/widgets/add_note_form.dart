@@ -6,6 +6,8 @@ import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/widgets/custom_bottom.dart';
 import 'package:notes_app/views/widgets/custom_text_feild.dart';
 
+import 'colors_list_view.dart';
+
 class AddNoteForm extends StatefulWidget {
   const AddNoteForm({
     super.key,
@@ -48,6 +50,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           const SizedBox(
             height: 50,
           ),
+          ColorsListView(),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
               return CustomButtom(
